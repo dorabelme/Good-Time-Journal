@@ -1,0 +1,414 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Libre Baskerville"), local("LibreBaskerville-Regular"), url(https://fonts.gstatic.com/s/librebaskerville/v5/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNZaxY.ttf) format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Hind", sans-serif;
+  color: #3d4552;
+  font-size: 1.5rem;
+  line-height: 1.8em;
+  font-weight: 300;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+h1 {
+  font-size: 4.5rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.6rem;
+}
+.main-header {
+  display: block;
+  margin: 0 auto;
+  max-width: 185rem;
+  padding: 4.5rem 3vw;
+  padding-top: 2.5rem;
+}
+.main-header nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-header nav .main-logo {
+  width: 15rem;
+  margin-right: 2vw;
+  flex-shrink: 0;
+}
+.main-header nav .main-logo img {
+  width: 100%;
+  border-style: none;
+}
+.main-header nav a {
+  background-color: transparent;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600 !important;
+  padding: 0px 20px 0px 20px;
+  line-height: 40px;
+  vertical-align: baseline;
+  text-align: left;
+  width: auto;
+  color: #1e314e;
+  text-transform: none;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.main-header nav a.login {
+  border: 0.5px transparent solid;
+  background-color: #a3e4d7;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+}
+.main-header nav .main-navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+section {
+  position: relative;
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 5rem 15rem;
+  box-sizing: content-box;
+  display: block;
+}
+section .cta-layout {
+  text-align: center;
+}
+section .cta-layout .title-label {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: #00a4e5;
+  text-transform: uppercase;
+}
+section .cta-layout h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  letter-spacing: -0.15rem;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+section .cta-layout p {
+  line-height: 1.8em;
+  font-size: 1.8rem;
+}
+section .cta-layout .cta-illustration {
+  max-width: 90rem;
+  margin: -4rem auto 0 auto;
+  position: relative;
+  z-index: -1;
+}
+section .cta-layout .cta-illustration img {
+  width: 70rem;
+}
+section .cta-layout .app-store-links {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+section .cta-layout .app-store-links .app-store-block {
+  display: block;
+  max-width: 18rem;
+  margin: 2rem 0.8rem;
+}
+section .cta-layout .app-store-links .app-store-block img {
+  width: 100%;
+}
+.three-steps-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.three-steps-wrapper .three-steps-col1-stuck {
+  width: 50%;
+}
+.three-steps-wrapper .three-steps-col1-stuck .intro-wrapper .title-label {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: #00a4e5;
+  text-transform: uppercase;
+}
+.three-steps-wrapper .three-steps-col1-stuck .intro-wrapper h2 {
+  max-width: 48rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  font-size: 4.2rem;
+  margin-bottom: 3rem;
+}
+.three-steps-wrapper .three-steps-col1-stuck .intro-wrapper p {
+  max-width: 51.2rem;
+}
+.three-steps-wrapper .three-steps-col1-stuck .three-steps-list {
+  padding-left: 0px;
+}
+.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item {
+  background: #ffffff;
+  box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 3rem 5rem 3rem 3rem;
+  min-height: 16.5rem;
+}
+.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__icon {
+  width: 7.2rem;
+  flex-shrink: 0;
+}
+.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__icon img {
+  width: 100%;
+}
+.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__content {
+  margin-left: 2.5rem;
+  color: #3d4552;
+}
+.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: #0f7ec1;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__content p {
+  font-size: 1.6rem;
+  margin: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.three-steps-wrapper .three-steps-images {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.three-steps-wrapper .three-steps-images img {
+  width: 100%;
+  margin: 2rem 0;
+}
+.three-card-col {
+  position: relative;
+  text-align: center;
+}
+.three-card-col .title-label {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: #00a4e5;
+  text-transform: uppercase;
+}
+.three-card-col h2 {
+  max-width: 48rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  font-size: 4.2rem;
+  margin-bottom: 3rem;
+}
+.three-card-col .three-card-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  text-align: center;
+  max-width: 54rem;
+}
+.three-card-col ul.three-card-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 5rem;
+}
+.three-card-col ul.three-card-list .three-card-list-item {
+  position: relative;
+  max-width: 41rem;
+  min-height: 59.2rem;
+  padding: 4rem 4rem 8rem 4rem;
+  background-color: #ffffff;
+  box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
+  margin: 0 1.5%;
+  list-style: none;
+}
+.three-card-col ul.three-card-list .three-card-list-item .three-card-img {
+  margin: 0 auto;
+  max-width: 18rem;
+}
+.three-card-col ul.three-card-list .three-card-list-item .three-card-img img {
+  width: 100%;
+  border-style: none;
+}
+.three-card-col ul.three-card-list .three-card-list-item h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.three-card-col ul.three-card-list .three-card-list-item p {
+  font-size: 1.6rem;
+  line-height: 1.8em;
+}
+.team {
+  position: relative;
+  text-align: center;
+}
+.team .title-label {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: #00a4e5;
+  text-transform: uppercase;
+}
+.team h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  font-size: 4.2rem;
+  margin-bottom: 3rem;
+}
+.team .three-steps-list {
+  padding-left: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.team .three-steps-list .three-steps-list-item {
+  width: 30%;
+  background: #ffffff;
+  box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3rem 1rem;
+  padding: 3rem 3rem 1rem 3rem;
+  min-height: 16.5rem;
+}
+.team .three-steps-list .three-steps-list-item .step-card__icon {
+  width: 100%;
+}
+.team .three-steps-list .three-steps-list-item .step-card__icon img {
+  height: 108px;
+}
+.team .three-steps-list .three-steps-list-item .step-card__content {
+  color: #3d4552;
+}
+.team .three-steps-list .three-steps-list-item .step-card__content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: #0f7ec1;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.team .three-steps-list .three-steps-list-item .step-card__content h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  letter-spacing: -0.05rem;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.team .three-steps-list .three-steps-list-item .step-card__content p {
+  font-size: 1.6rem;
+  margin: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.team .three-steps-list .three-steps-list-item .step-card__content img {
+  width: 15%;
+}
