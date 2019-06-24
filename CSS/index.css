@@ -111,6 +111,11 @@ p {
   border-radius: 0.5rem;
   padding: 1rem 2rem;
 }
+.main-header nav a.login:hover {
+  background: white;
+  color: black;
+  border: 0.3rem solid #a3e4d7;
+}
 .main-header nav .main-navigation {
   display: flex;
   width: 100%;
@@ -254,11 +259,10 @@ section .cta-layout .app-store-links .app-store-block img {
   margin-inline-end: 0px;
 }
 .three-steps-wrapper .three-steps-images {
-  width: 45%;
+  width: 44%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 5rem;
 }
 .three-steps-wrapper .three-steps-images img {
   width: 100%;
@@ -578,15 +582,17 @@ footer .footer-wrapper .footer-col1 .footer-secondary .footer-legal p {
   color: black;
 }
 footer .footer-wrapper .footer-col2 {
-  height: 100%;
+  width: 60%;
+  padding-bottom: 10rem;
 }
 footer .footer-wrapper .footer-col2 .footer-menu-list {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 footer .footer-wrapper .footer-col2 .footer-menu-list h2 {
   text-decoration: none;
@@ -600,7 +606,9 @@ footer .footer-wrapper .footer-col2 .footer-menu-list h2 {
 }
 footer .footer-wrapper .footer-col2 .footer-menu-list .sub-menu {
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
 }
-footer .footer-wrapper .footer-col2 .footer-menu-list .sub-menu a:link {
+footer .footer-wrapper .footer-col2 .footer-menu-list .sub-menu a:visited {
   text-decoration: none;
 }
