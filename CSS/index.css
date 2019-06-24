@@ -329,6 +329,9 @@ section .cta-layout .app-store-links .app-store-block img {
   font-size: 1.6rem;
   line-height: 1.8em;
 }
+.illustration-footer {
+  padding: 0;
+}
 .team {
   position: relative;
   text-align: center;
@@ -411,4 +414,97 @@ section .cta-layout .app-store-links .app-store-block img {
 }
 .team .three-steps-list .three-steps-list-item .step-card__content img {
   width: 15%;
+}
+footer {
+  background-color: #a3e4d7;
+  max-width: 100%;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+}
+footer .footer-wrapper {
+  max-width: 160rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-wrapper .footer-col1 {
+  max-width: 40.6rem;
+}
+footer .footer-wrapper .footer-col1 h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+  letter-spacing: -0.05rem;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+footer .footer-wrapper .footer-col1 p {
+  font-size: 1.6rem;
+  line-height: 1.8em;
+}
+footer .footer-wrapper .footer-col1 .footer-secondary {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .footer-wrapper .footer-col1 .footer-secondary .footer-social .footer-social-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0;
+}
+footer .footer-wrapper .footer-col1 .footer-secondary .footer-social .footer-social-list .footer-social-list-item {
+  width: 2.6rem;
+  margin: 0 0.5rem;
+  list-style: none;
+}
+footer .footer-wrapper .footer-col1 .footer-secondary .footer-social .footer-social-list .footer-social-list-item a {
+  text-decoration: none;
+  background-color: transparent;
+}
+footer .footer-wrapper .footer-col1 .footer-secondary .footer-social .footer-social-list .footer-social-list-item a .social-logo {
+  width: 100%;
+}
+footer .footer-wrapper .footer-col1 .footer-secondary .footer-legal p {
+  margin-top: 0 0 0 1rem;
+  font-size: 1.3rem;
+  color: black;
+}
+footer .footer-wrapper .footer-col2 {
+  height: 100%;
+}
+footer .footer-wrapper .footer-col2 .footer-menu-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+}
+footer .footer-wrapper .footer-col2 .footer-menu-list h2 {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+  letter-spacing: -0.05rem;
+  color: #1e314e;
+  line-height: 1.2em;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+footer .footer-wrapper .footer-col2 .footer-menu-list .sub-menu {
+  padding-left: 0;
+}
+footer .footer-wrapper .footer-col2 .footer-menu-list .sub-menu a:link {
+  text-decoration: none;
 }
