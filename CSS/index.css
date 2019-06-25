@@ -200,6 +200,12 @@ section {
   color: #00a4e5;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .title-label {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -210,6 +216,12 @@ h2 {
   margin: 0;
   letter-spacing: -0.15rem;
   margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
 }
 h3 {
   font-family: "Montserrat", sans-serif;
@@ -223,7 +235,6 @@ h3 {
 h4 {
   font-size: 1.7rem;
   font-weight: 400;
-  letter-spacing: -0.05rem;
   color: #1e314e;
   line-height: 1.2em;
   margin: 0;
@@ -480,6 +491,11 @@ section .cta-layout .app-store-links .app-store-block img {
   max-width: 48rem;
   font-size: 4.2rem;
 }
+@media (max-width: 500px) {
+  .how-it-works-wrapper .column1 .intro-wrapper h2 {
+    font-size: 3rem;
+  }
+}
 .how-it-works-wrapper .column1 .intro-wrapper p {
   max-width: 51.2rem;
 }
@@ -687,6 +703,11 @@ section .cta-layout .app-store-links .app-store-block img {
   font-size: 1.9rem;
   line-height: 1.2em;
   letter-spacing: 0.05rem;
+}
+@media (max-width: 500px) {
+  .review h4 {
+    font-size: 1.6rem;
+  }
 }
 .review .reviews {
   width: 100%;

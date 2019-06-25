@@ -48,6 +48,10 @@ section {
   letter-spacing: 0.3rem;
   color: @lightblue;
   text-transform: uppercase;
+  @media @mobile {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 h1, h2 {
@@ -59,6 +63,9 @@ h1, h2 {
   margin: 0;
   letter-spacing: -0.15rem;
   margin-bottom: 2rem;
+  @media @mobile {
+    font-size: 3rem;
+  }
 }
 
 h3 {
@@ -74,7 +81,6 @@ h3 {
 h4 {
   font-size: 1.7rem;
   font-weight: 400;
-  letter-spacing: -0.05rem;
   color: @darkblue;
   line-height: 1.2em;
   margin: 0;
