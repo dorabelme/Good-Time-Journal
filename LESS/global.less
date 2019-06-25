@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  min-width: 45rem; 
+  // min-width: 45rem; 
   max-width: 140rem;
   margin: 0 auto;
   background-color: @main-bg;
@@ -16,6 +16,9 @@ body {
   font-size: 1.5rem;
   line-height: 1.8em;
   font-weight: 300;
+  @media @mobile {
+    margin: 1rem;
+  }
 }
 
 a {

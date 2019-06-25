@@ -160,7 +160,6 @@ html {
   font-size: 62.5%;
 }
 body {
-  min-width: 45rem;
   max-width: 140rem;
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -169,6 +168,11 @@ body {
   font-size: 1.5rem;
   line-height: 1.8em;
   font-weight: 300;
+}
+@media (max-width: 500px) {
+  body {
+    margin: 1rem;
+  }
 }
 a {
   font-family: Montserrat;
@@ -321,6 +325,11 @@ p {
     padding-right: 0;
   }
 }
+@media (max-width: 500px) {
+  .main-header nav .main-navigation a {
+    padding: 1rem;
+  }
+}
 .main-header nav .main-navigation a.login {
   border: 0.5px transparent solid;
   background-color: #a3e4d7;
@@ -335,6 +344,11 @@ p {
 @media (max-width: 1000px) {
   .main-header nav .main-navigation a.login {
     padding: 0.2rem 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-header nav .main-navigation a.login {
+    padding: 0.5px 1rem;
   }
 }
 @media (max-width: 1000px) {
