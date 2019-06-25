@@ -28,6 +28,134 @@
   font-weight: 700;
   src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 @font-face {
   font-family: "Libre Baskerville";
   font-style: normal;
@@ -156,6 +284,7 @@ section .cta-layout h1 {
 section .cta-layout p {
   line-height: 1.8em;
   font-size: 1.8rem;
+  margin-bottom: 2rem;
 }
 section .cta-layout .cta-illustration {
   max-width: 90rem;
@@ -264,7 +393,10 @@ section .cta-layout .app-store-links .app-store-block img {
   flex-direction: column;
   align-items: flex-start;
 }
-.three-steps-wrapper .three-steps-images img {
+.three-steps-wrapper .three-steps-images .three-step-image-wrapper {
+  max-width: 400px;
+}
+.three-steps-wrapper .three-steps-images .three-step-image-wrapper img {
   width: 100%;
   margin: 2rem 0;
 }
@@ -336,18 +468,11 @@ section .cta-layout .app-store-links .app-store-block img {
   font-size: 1.7rem;
   font-weight: 400;
   margin-bottom: 2rem;
+  margin-top: 3rem;
 }
 .three-card-col ul.three-card-list .three-card-list-item p {
   font-size: 1.6rem;
   line-height: 1.8em;
-}
-.illustration-footer {
-  padding: 0;
-  margin: 0 auto;
-  width: 80%;
-}
-.illustration-footer img {
-  height: 500px;
 }
 .team {
   position: relative;
@@ -524,15 +649,15 @@ footer {
 }
 footer .footer-wrapper {
   max-width: 160rem;
-  padding: 0 3rem;
+  padding: 3rem 3rem;
   margin: 0 auto;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
 }
 footer .footer-wrapper .footer-col1 {
   max-width: 40.6rem;
+  padding-left: 2rem;
 }
 footer .footer-wrapper .footer-col1 h2 {
   font-family: "Montserrat", sans-serif;
@@ -544,7 +669,6 @@ footer .footer-wrapper .footer-col1 h2 {
   font-size: 2.3rem;
   font-weight: 400;
   margin-bottom: 2rem;
-  padding-top: 2rem;
 }
 footer .footer-wrapper .footer-col1 p {
   font-size: 1.6rem;
@@ -583,7 +707,6 @@ footer .footer-wrapper .footer-col1 .footer-secondary .footer-legal p {
 }
 footer .footer-wrapper .footer-col2 {
   width: 60%;
-  padding-bottom: 10rem;
 }
 footer .footer-wrapper .footer-col2 .footer-menu-list {
   display: flex;
