@@ -8,28 +8,69 @@
     nav {
         .flex(row, flex-end);
 
+        @media @mobile {
+            .flex(column, center);
+        }
+
         .main-logo {
             width: 15rem;
             margin-right: 2vw;
+            @media @mobile {
+                text-align: center;
+            }
 
             img {
                 .width-100();
+                @media @mobile {
+                    max-width: 10rem;
+                }
             }
         }
 
         .main-navigation {
             .flex(row, space-between, none);
             .width-100();
+            @media @tablet {
+                .flex(column, center, flex-end);
+                padding-left: 0;
+                margin-left: 0;
+            }
+            @media @mobile {
+                .flex(column, center);
+            }
     
             a {
                 font-weight: 600;
                 padding: 0 2rem;
                 line-height: 4rem;
                 vertical-align: baseline;
+                @media @tablet {
+                    padding-right: 0;
+                }
             }
 
             a.login {
                 .button-style();
+                @media @tablet {
+                    padding: 0.2rem 1.5rem;
+                }
+            }
+
+            .main-navigation-left {
+                @media @tablet {
+                    .flex(column, flex-end, flex-end, nowrap);
+                }
+                @media @mobile {
+                    .flex(row, center, center);
+                }
+            }
+            .main-navigation-right {
+                @media @tablet {
+                    .flex(column, flex-flex-end, flex-end, nowrap);
+                }
+                @media @mobile {
+                    .flex(row, center, center);
+                }
             }
         }
     }

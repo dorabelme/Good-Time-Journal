@@ -6,6 +6,10 @@
     .team-list {
         padding-left: 0px;
         .flex(row, space-between, center, wrap);
+        @media @tablet {
+            .flex(column, center, center);
+            
+        }
 
         .team-list-item {
             width: 30%;
@@ -14,7 +18,12 @@
             .flex(column, flex-start);
             margin: 3rem 1rem;
             padding: 3rem 3rem 1rem 3rem;
-            min-height: 40rem;
+            height: 42rem;
+            overflow: scroll;
+            @media @tablet {
+                width: 70%;
+                min-height: 20rem;
+            }
 
             .card-icon {
                 .width-100();
@@ -41,6 +50,9 @@
                 }
                 img {
                     width: 15%;
+                    @media @tablet {
+                        width: 10%;
+                    }
                 }
             }
         }

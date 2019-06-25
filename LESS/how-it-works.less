@@ -6,8 +6,15 @@
 
     .column1 {
         width: 50%;
+        @media @tablet {
+            width: 100%;
+            text-align: center;
+        }
 
         .intro-wrapper {
+            @media @tablet {
+                .flex(column, center, center);
+            }
             h2 {
                 max-width: 48rem;
                 font-size: 4.2rem;
@@ -25,6 +32,9 @@
                 margin: 3rem 0;
                 padding: 3rem 2rem;
                 min-height: 16.5rem;
+                @media @tablet {
+                    .flex(column, center, center);
+                }
 
                 .card-icon {
                     width: 7.2rem;
@@ -51,6 +61,10 @@
     .how-it-works-images {
         width: 44%;
         .flex(column, none, flex-start, wrap);
+        @media @tablet {
+            width: 100%;
+            .flex(row, center, center);
+        }
 
         .how-it-works-image-wrapper {
             max-width: 40rem;

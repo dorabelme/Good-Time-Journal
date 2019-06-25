@@ -9,8 +9,9 @@
   .reviews {
     .width-100();
     background-color: @review-bg;
-    padding: 0rem;
+    padding: 5rem 0 0 0;
     box-shadow: 1rem 1rem 5rem @box-shadow;
+    text-align: center;
   }
   .reviews:after {
     background-image: linear-gradient(to bottom, @review-bg, @main-bg);
@@ -57,18 +58,8 @@
 }
 
 
-
-@media (min-width: 600px) {
+@media @mobile {
   .reviews {
     padding-top: 0px;
-  }
-}
-@media (min-width: 600px) {
-  .reviews:before {
-    background-image: linear-gradient(to top, #F1F2F6, #ffffff);
-    display: block;
-    height: 50px;
-    content: "";
-    width: 100%;
   }
 }
