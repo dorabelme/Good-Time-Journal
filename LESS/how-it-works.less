@@ -6,106 +6,58 @@
 
     .column1 {
         width: 50%;
-        // margin-right: 4rem;
 
         .intro-wrapper {
-
-            // .title-label {
-            //     font-family: "Montserrat", sans-serif;
-            //     display: block;
-            //     margin-bottom: 2rem;
-            //     font-size: 1.2rem;
-            //     font-weight: 700;
-            //     letter-spacing: 0.3rem;
-            //     color: #00a4e5;
-            //     text-transform: uppercase;
-            // }
-
             h2 {
                 max-width: 48rem;
                 font-size: 4.2rem;
-            //     max-width: 48rem;
-            //     font-family: "Montserrat", sans-serif;
-            //     font-weight: 300;
-            //     letter-spacing: -0.05rem;
-            //     color: #1e314e;
-            //     line-height: 1.2em;
-            //     margin: 0;
-            //     font-size: 4.2rem;
-            //     margin-bottom: 3rem;
             }
-
             p {
                 max-width: 51.2rem;
             }
-
         }
 
         .how-it-works-list {
-            padding-left: 0px;
-
             .how-it-works-list-item {
-                background: #ffffff;
-                box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: flex-start;
-                align-items: center;
+                background: @white;
+                box-shadow: 1rem 1rem 5rem @box-shadow;
+                .flex(row, flex-start);
                 margin: 3rem 0;
-                padding: 3rem 2rem 3rem 2rem;
+                padding: 3rem 2rem;
                 min-height: 16.5rem;
 
                 .card-icon {
                     width: 7.2rem;
                     flex-shrink: 0;
-
                     img {
-                        width: 100%;                
+                        .width-100();                
                     }
                 }
 
                 .card-content {
                     margin-left: 2.5rem;
-                    color: #3d4552;
-
-                    h3 {
-                        font-family: "Montserrat", sans-serif;
-                        font-size: 1.3rem;
-                        font-weight: 600;
-                        letter-spacing: 0.3rem;
-                        color: #0f7ec1;
-                        text-transform: uppercase;
-                        margin-bottom: 0.5rem;
-                    }
-
+                    color: @body-color;
                     p {
-                        font-size: 1.6rem;
                         margin: 0;
                         display: block;
                         margin-block-start: 1em;
                         margin-block-end: 1em;
-                        margin-inline-start: 0px;
-                        margin-inline-end: 0px;
                     }
                 }
             }
         }
     }
 
-    .three-steps-images {
+    .how-it-works-images {
         width: 44%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        .flex(column, none, flex-start, wrap);
 
-        .three-step-image-wrapper {
-            max-width: 400px;
-
+        .how-it-works-image-wrapper {
+            max-width: 40rem;
             img {
-                width: 100%;
+                .width-100();
                 margin: 2rem 0;
             }
         }
     }
-
 }

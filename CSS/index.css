@@ -207,6 +207,25 @@ h2 {
   letter-spacing: -0.15rem;
   margin-bottom: 2rem;
 }
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: #0f7ec1;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
 p {
   font-size: 1.6rem;
   line-height: 1.8em;
@@ -305,18 +324,16 @@ section .cta-layout .app-store-links .app-store-block img {
 .how-it-works-wrapper .column1 .intro-wrapper p {
   max-width: 51.2rem;
 }
-.how-it-works-wrapper .column1 .how-it-works-list {
-  padding-left: 0px;
-}
 .how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item {
-  background: #ffffff;
+  background: #FFFFFF;
   box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
   margin: 3rem 0;
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 3rem 2rem;
   min-height: 16.5rem;
 }
 .how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item .card-icon {
@@ -330,110 +347,74 @@ section .cta-layout .app-store-links .app-store-block img {
   margin-left: 2.5rem;
   color: #3d4552;
 }
-.how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item .card-content h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: 0.3rem;
-  color: #0f7ec1;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
 .how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item .card-content p {
-  font-size: 1.6rem;
   margin: 0;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
-.how-it-works-wrapper .three-steps-images {
+.how-it-works-wrapper .how-it-works-images {
   width: 44%;
   display: flex;
   flex-direction: column;
+  justify-content: none;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
-.how-it-works-wrapper .three-steps-images .three-step-image-wrapper {
-  max-width: 400px;
+.how-it-works-wrapper .how-it-works-images .how-it-works-image-wrapper {
+  max-width: 40rem;
 }
-.how-it-works-wrapper .three-steps-images .three-step-image-wrapper img {
+.how-it-works-wrapper .how-it-works-images .how-it-works-image-wrapper img {
   width: 100%;
   margin: 2rem 0;
 }
-.three-card-col {
+.technology {
   position: relative;
   text-align: center;
 }
-.three-card-col .title-label {
-  font-family: "Montserrat", sans-serif;
-  display: block;
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 0.3rem;
-  color: #00a4e5;
-  text-transform: uppercase;
-}
-.three-card-col h2 {
-  max-width: 48rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  letter-spacing: -0.05rem;
-  color: #1e314e;
-  line-height: 1.2em;
-  margin: 0;
-  font-size: 4.2rem;
-  margin-bottom: 3rem;
-}
-.three-card-col .three-card-title {
+.technology .technology-title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4rem;
   text-align: center;
   max-width: 54rem;
 }
-.three-card-col ul.three-card-list {
+.technology ul.technology-list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: nowrap;
   margin-top: 5rem;
   padding: 0;
 }
-.three-card-col ul.three-card-list .three-card-list-item {
+.technology ul.technology-list .technology-list-item {
   position: relative;
   max-width: 41rem;
-  min-height: 59.2rem;
+  min-height: 50.2rem;
   padding: 4rem 4rem 8rem 4rem;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
   margin: 0 1.5%;
   list-style: none;
 }
-.three-card-col ul.three-card-list .three-card-list-item .three-card-img {
+.technology ul.technology-list .technology-list-item .technology-img {
   margin: 0 auto;
   max-width: 18rem;
 }
-.three-card-col ul.three-card-list .three-card-list-item .three-card-img img {
+.technology ul.technology-list .technology-list-item .technology-img img {
   width: 100%;
   border-style: none;
 }
-.three-card-col ul.three-card-list .three-card-list-item h3 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+.technology ul.technology-list .technology-list-item h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
   letter-spacing: -0.05rem;
   color: #1e314e;
   line-height: 1.2em;
   margin: 0;
-  font-size: 1.7rem;
-  font-weight: 400;
   margin-bottom: 2rem;
   margin-top: 3rem;
-}
-.three-card-col ul.three-card-list .three-card-list-item p {
-  font-size: 1.6rem;
-  line-height: 1.8em;
 }
 .team {
   position: relative;
