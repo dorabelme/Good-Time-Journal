@@ -547,9 +547,9 @@ section .cta-layout .app-store-links .app-store-block img {
   }
 }
 footer {
+  width: 100%;
   background-color: #a3e4d7;
-  max-width: 100%;
-  color: black;
+  color: #1e314e;
   font-size: 1.5rem;
   line-height: 1.2em;
 }
@@ -558,40 +558,40 @@ footer .footer-wrapper {
   padding: 3rem 3rem;
   margin: 0 auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
 footer .footer-wrapper .footer-col1 {
   max-width: 40.6rem;
   padding-left: 2rem;
 }
 footer .footer-wrapper .footer-col1 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600 !important;
+  font-weight: 600;
   letter-spacing: -0.05rem;
   color: #1e314e;
-  line-height: 1.2em;
-  margin: 0;
   font-size: 2.3rem;
-  font-weight: 400;
-  margin-bottom: 2rem;
 }
 footer .footer-wrapper .footer-col1 p {
   font-size: 1.6rem;
   line-height: 1.8em;
+  color: black;
 }
 footer .footer-wrapper .footer-col1 .footer-secondary {
   margin-top: 2rem;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: nowrap;
 }
 footer .footer-wrapper .footer-col1 .footer-secondary .footer-social .footer-social-list {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
   padding-left: 0;
 }
 footer .footer-wrapper .footer-col1 .footer-secondary .footer-social .footer-social-list .footer-social-list-item {
@@ -610,33 +610,35 @@ footer .footer-wrapper .footer-col1 .footer-secondary .footer-legal p {
   margin-top: 0 0 0 1rem;
   font-size: 1.3rem;
   color: black;
+  padding-top: 1.5rem;
 }
 footer .footer-wrapper .footer-col2 {
   width: 60%;
 }
 footer .footer-wrapper .footer-col2 .footer-menu-list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: nowrap;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 footer .footer-wrapper .footer-col2 .footer-menu-list h2 {
+  font-size: 1.8rem;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600 !important;
+  font-weight: 600;
   letter-spacing: -0.05rem;
   color: #1e314e;
-  line-height: 1.2em;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
 }
 footer .footer-wrapper .footer-col2 .footer-menu-list .sub-menu {
   padding-left: 0;
   display: flex;
   flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  flex-wrap: nowrap;
 }
 footer .footer-wrapper .footer-col2 .footer-menu-list .sub-menu a {
   color: black;
