@@ -161,6 +161,8 @@ html {
   font-size: 62.5%;
 }
 body {
+  max-width: 140rem;
+  margin: 0 auto;
   background-color: #FFFFFF;
   font-family: "Hind", sans-serif;
   color: #3d4552;
@@ -194,7 +196,8 @@ section {
   color: #00a4e5;
   text-transform: uppercase;
 }
-h1 {
+h1,
+h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 4rem;
   font-weight: 300;
@@ -286,43 +289,26 @@ section .cta-layout .app-store-links .app-store-block {
 section .cta-layout .app-store-links .app-store-block img {
   width: 100%;
 }
-.three-steps-wrapper {
+.how-it-works-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
-.three-steps-wrapper .three-steps-col1-stuck {
+.how-it-works-wrapper .column1 {
   width: 50%;
 }
-.three-steps-wrapper .three-steps-col1-stuck .intro-wrapper .title-label {
-  font-family: "Montserrat", sans-serif;
-  display: block;
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 0.3rem;
-  color: #00a4e5;
-  text-transform: uppercase;
-}
-.three-steps-wrapper .three-steps-col1-stuck .intro-wrapper h2 {
+.how-it-works-wrapper .column1 .intro-wrapper h2 {
   max-width: 48rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  letter-spacing: -0.05rem;
-  color: #1e314e;
-  line-height: 1.2em;
-  margin: 0;
   font-size: 4.2rem;
-  margin-bottom: 3rem;
 }
-.three-steps-wrapper .three-steps-col1-stuck .intro-wrapper p {
+.how-it-works-wrapper .column1 .intro-wrapper p {
   max-width: 51.2rem;
 }
-.three-steps-wrapper .three-steps-col1-stuck .three-steps-list {
+.how-it-works-wrapper .column1 .how-it-works-list {
   padding-left: 0px;
 }
-.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item {
+.how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item {
   background: #ffffff;
   box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
   display: flex;
@@ -333,18 +319,18 @@ section .cta-layout .app-store-links .app-store-block img {
   padding: 3rem 2rem 3rem 2rem;
   min-height: 16.5rem;
 }
-.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__icon {
+.how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item .card-icon {
   width: 7.2rem;
   flex-shrink: 0;
 }
-.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__icon img {
+.how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item .card-icon img {
   width: 100%;
 }
-.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__content {
+.how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item .card-content {
   margin-left: 2.5rem;
   color: #3d4552;
 }
-.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__content h3 {
+.how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item .card-content h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
@@ -353,7 +339,7 @@ section .cta-layout .app-store-links .app-store-block img {
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
-.three-steps-wrapper .three-steps-col1-stuck .three-steps-list .three-steps-list-item .step-card__content p {
+.how-it-works-wrapper .column1 .how-it-works-list .how-it-works-list-item .card-content p {
   font-size: 1.6rem;
   margin: 0;
   display: block;
@@ -362,16 +348,16 @@ section .cta-layout .app-store-links .app-store-block img {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.three-steps-wrapper .three-steps-images {
+.how-it-works-wrapper .three-steps-images {
   width: 44%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.three-steps-wrapper .three-steps-images .three-step-image-wrapper {
+.how-it-works-wrapper .three-steps-images .three-step-image-wrapper {
   max-width: 400px;
 }
-.three-steps-wrapper .three-steps-images .three-step-image-wrapper img {
+.how-it-works-wrapper .three-steps-images .three-step-image-wrapper img {
   width: 100%;
   margin: 2rem 0;
 }
