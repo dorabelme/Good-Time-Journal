@@ -161,7 +161,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: "Hind", sans-serif;
   color: #3d4552;
   font-size: 1.5rem;
@@ -169,23 +169,45 @@ body {
   font-weight: 300;
 }
 a {
-  font-size: 1.6rem;
+  font-family: Montserrat;
+  font-size: 1.5rem;
   text-decoration: none;
+  color: #1e314e;
+  text-transform: none;
+  cursor: pointer;
+}
+section {
+  display: block;
+  position: relative;
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 5rem 15rem;
+  box-sizing: content-box;
+}
+.title-label {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: #00a4e5;
+  text-transform: uppercase;
 }
 h1 {
-  font-size: 4.5rem;
-}
-h2 {
-  font-size: 2.5rem;
-}
-h3 {
-  font-size: 2rem;
-}
-h6 {
-  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  letter-spacing: -0.15rem;
+  margin-bottom: 2rem;
 }
 p {
   font-size: 1.6rem;
+  line-height: 1.8em;
+  margin-bottom: 2rem;
 }
 .main-header {
   display: block;
@@ -196,87 +218,48 @@ p {
 }
 .main-header nav {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
+  flex-wrap: nowrap;
 }
 .main-header nav .main-logo {
   width: 15rem;
   margin-right: 2vw;
-  flex-shrink: 0;
 }
 .main-header nav .main-logo img {
   width: 100%;
-  border-style: none;
 }
-.main-header nav a {
-  background-color: transparent;
-  font-family: Montserrat;
-  font-size: 15px;
-  font-weight: 600 !important;
-  padding: 0px 20px 0px 20px;
-  line-height: 40px;
+.main-header nav .main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.main-header nav .main-navigation a {
+  font-weight: 600;
+  padding: 0 2rem;
+  line-height: 4rem;
   vertical-align: baseline;
-  text-align: left;
-  width: auto;
-  color: #1e314e;
-  text-transform: none;
-  text-decoration: none;
-  background: rgba(0, 0, 0, 0);
-  cursor: pointer;
 }
-.main-header nav a.login {
+.main-header nav .main-navigation a.login {
   border: 0.5px transparent solid;
   background-color: #a3e4d7;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
 }
-.main-header nav a.login:hover {
-  background: white;
-  color: black;
+.main-header nav .main-navigation a.login:hover {
+  background: #FFFFFF;
+  color: #1e314e;
   border: 0.1rem solid #a3e4d7;
-}
-.main-header nav .main-navigation {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-section {
-  position: relative;
-  max-width: 160rem;
-  margin: 0 auto;
-  padding: 5rem 15rem;
-  box-sizing: content-box;
-  display: block;
 }
 section .cta-layout {
   text-align: center;
 }
-section .cta-layout .title-label {
-  font-family: "Montserrat", sans-serif;
-  display: block;
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: 0.3rem;
-  color: #00a4e5;
-  text-transform: uppercase;
-}
-section .cta-layout h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  letter-spacing: -0.05rem;
-  color: #1e314e;
-  line-height: 1.2em;
-  margin: 0;
-  letter-spacing: -0.15rem;
-  font-size: 4rem;
-  margin-bottom: 2rem;
-}
 section .cta-layout p {
-  line-height: 1.8em;
   font-size: 1.8rem;
-  margin-bottom: 2rem;
 }
 section .cta-layout .cta-illustration {
   max-width: 90rem;
@@ -290,10 +273,10 @@ section .cta-layout .cta-illustration img {
 section .cta-layout .app-store-links {
   position: relative;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  flex-wrap: nowrap;
 }
 section .cta-layout .app-store-links .app-store-block {
   display: block;
