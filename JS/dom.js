@@ -82,3 +82,14 @@ headings.forEach(heading => {
   });
 });
 
+const mainheading = document.querySelector(".cta-layout h1");
+mainheading.addEventListener("mouseover", () => {
+    mainheading.style.transform = "scale(1.05)";
+    mainheading.style.transition = "all 0.3s ease 0s";
+  });
+
+mainheading.addEventListener("mouseout", () => {
+    mainheading.style.transform = "scale(1)";
+    mainheading.style.transition = "all 0.3s ease 0s";
+  });
+

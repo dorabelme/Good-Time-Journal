@@ -627,7 +627,7 @@ section .cta-layout .app-store-links .app-store-block img {
 }
 .technology ul.technology-list .technology-list-item h3 {
   font-size: 1.7rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: -0.05rem;
   color: #1e314e;
   line-height: 1.2em;
@@ -663,7 +663,7 @@ section .cta-layout .app-store-links .app-store-block img {
   box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: flex-center;
   align-items: center;
   flex-wrap: nowrap;
   margin: 3rem 1rem;
@@ -673,8 +673,8 @@ section .cta-layout .app-store-links .app-store-block img {
 }
 @media (max-width: 1000px) {
   .team .team-list .team-list-item {
-    width: 70%;
-    min-height: 20rem;
+    width: 80%;
+    max-height: 37rem;
   }
 }
 .team .team-list .team-list-item .card-icon {
@@ -705,6 +705,7 @@ section .cta-layout .app-store-links .app-store-block img {
 @media (max-width: 1000px) {
   .team .team-list .team-list-item .card-content img {
     width: 10%;
+    min-width: 3rem;
   }
 }
 .review {
@@ -727,12 +728,10 @@ section .cta-layout .app-store-links .app-store-block img {
   box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
   text-align: center;
 }
-.review .reviews:after {
-  background-image: linear-gradient(to bottom, #F1F2F6, #FFFFFF);
-  display: block;
-  height: 5rem;
-  content: "";
-  width: 100%;
+@media (max-width: 500px) {
+  .review .reviews {
+    padding-top: 0.5rem;
+  }
 }
 .review .reviews .review {
   display: none;
@@ -745,32 +744,39 @@ section .cta-layout .app-store-links .app-store-block img {
 }
 .review .reviews .review-active p {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 1rem;
   letter-spacing: 0.05rem;
+}
+@media (max-width: 1000px) {
+  .review .reviews .review-active {
+    padding: 1rem;
+  }
 }
 .review .reviews .review-controls {
   display: flex;
   justify-content: space-between;
   margin: auto;
-  margin-top: 70px;
-  max-width: 200px;
+  margin-top: 7rem;
+  max-width: 20rem;
   text-align: center;
   width: 70%;
 }
 .review .reviews .review-controls .tab {
   background-color: #a3e4d7;
   cursor: pointer;
-  height: 12px;
-  width: 12px;
+  height: 1.2rem;
+  width: 1.2rem;
 }
 .review .reviews .review-controls .tab-active {
   background-color: white;
   border: 2px solid #23d3d3;
 }
-@media (max-width: 500px) {
-  .reviews {
-    padding-top: 0px;
-  }
+.review .reviews:after {
+  background-image: linear-gradient(to bottom, #F1F2F6, #FFFFFF);
+  display: block;
+  height: 5rem;
+  content: "";
+  width: 100%;
 }
 footer {
   width: 100%;

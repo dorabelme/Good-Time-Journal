@@ -15,6 +15,49 @@
     padding: 5rem 0 0 0;
     box-shadow: 1rem 1rem 5rem @box-shadow;
     text-align: center;
+
+    @media @mobile {
+      padding-top: 0.5rem;;
+    }
+
+    .review {
+    display: none;
+    }
+
+    .review-active {
+      display: block;
+      line-height: 1.3;
+      margin: auto;
+      text-align: center;
+      p {
+        font-weight: bold;
+        margin-top: 1rem;
+        letter-spacing: 0.05rem;
+      }
+      @media @tablet {
+        padding: 1rem;
+      }
+    }
+
+    .review-controls {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 7rem;
+      max-width: 20rem;
+      text-align: center;
+      width: 70%;
+      .tab {
+        background-color: @main-color;
+        cursor: pointer;
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+      .tab-active {
+        background-color: @main-b;
+        border: 2px solid @small-header;
+      }  
+    }
   }
   .reviews:after {
     background-image: linear-gradient(to bottom, @review-bg, @main-bg);
@@ -22,47 +65,5 @@
     height: 5rem;
     content: "";
     .width-100();
-  }
-  .reviews .review {
-    display: none;
-  }
-  .reviews .review-active {
-    display: block;
-    line-height: 1.3;
-    margin: auto;
-    text-align: center;
-    p {
-      font-weight: bold;
-      margin-top: 10px;
-      letter-spacing: 0.05rem;
-    }
-  }
-
-  .reviews .review-controls {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    margin-top: 70px;
-    max-width: 200px;
-    text-align: center;
-    width: 70%;
-  }
-
-  .reviews .review-controls .tab {
-    background-color: #a3e4d7;
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    }
-  .reviews .review-controls .tab-active {
-    background-color: white;
-    border: 2px solid #23d3d3;
-  }  
-}
-
-
-@media @mobile {
-  .reviews {
-    padding-top: 0px;
   }
 }

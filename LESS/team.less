@@ -7,22 +7,22 @@
         padding-left: 0px;
         .flex(row, center, center, wrap);
         @media @tablet {
-            .flex(column, center, center);
-            
+            .flex(column, center, center)   
         }
 
         .team-list-item {
             width: 30%;
             background: @main-bg;
             box-shadow: 1rem 1rem 5rem @box-shadow;
-            .flex(column, flex-start);
+            .flex(column, flex-center);
             margin: 3rem 1rem;
             padding: 3rem 3rem 1rem 3rem;
             height: 42rem;
             overflow: scroll;
             @media @tablet {
-                width: 70%;
-                min-height: 20rem;
+                width: 80%;
+                // min-height: 20rem;
+                max-height: 37rem;
             }
 
             .card-icon {
@@ -52,6 +52,7 @@
                     width: 15%;
                     @media @tablet {
                         width: 10%;
+                        min-width: 3rem;
                     }
                 }
             }
