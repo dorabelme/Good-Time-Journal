@@ -3,16 +3,16 @@ class Tab {
     this.element = props;
     this.tab = props.dataset.tab;
     this.review = document.querySelector(`.review[data-review='${this.tab}']`);
-    this.element.addEventListener("click", () => this.display());
+    this.element.addEventListener("click", () => this.active());
   }
 
-  hide() {
+  hidden() {
     document.querySelector(".review-active").classList.toggle("review-active");
     document.querySelector(".tab-active").classList.toggle("tab-active");
   }
 
-  display() {
-    this.hide();
+  active() {
+    this.hidden();
     this.review.classList.toggle("review-active");
     this.element.classList.toggle("tab-active");
   }
@@ -39,7 +39,7 @@ class Reviews {
   }
 }
 
-document.querySelectorAll(".tab").forEach(el => new Tab(el));
+document.querySelectorAll(".tab").forEach(element => new Tab(element));
 
 let reviews = document.querySelector(".reviews");
 reviews = new Reviews(reviews);

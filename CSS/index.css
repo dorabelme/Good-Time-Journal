@@ -217,6 +217,12 @@ h2 {
   letter-spacing: -0.15rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 1000px) {
+  h1,
+  h2 {
+    font-size: 3.5rem;
+  }
+}
 @media (max-width: 500px) {
   h1,
   h2 {
@@ -359,7 +365,7 @@ p {
 }
 @media (max-width: 500px) {
   .main-header nav .main-navigation a.login {
-    padding: 0.5px 1rem;
+    padding: 0.2px 1rem;
   }
 }
 @media (max-width: 1000px) {
@@ -416,6 +422,11 @@ section .cta-layout {
 section .cta-layout p {
   font-size: 1.8rem;
 }
+@media (max-width: 1000px) {
+  section .cta-layout p {
+    margin-bottom: 4rem;
+  }
+}
 @media (max-width: 500px) {
   section .cta-layout p {
     font-size: 1.5rem;
@@ -435,11 +446,11 @@ section .cta-layout .cta-illustration {
   }
 }
 section .cta-layout .cta-illustration img {
-  width: 70rem;
+  width: 100%;
 }
 @media (max-width: 500px) {
   section .cta-layout .cta-illustration img {
-    width: 40rem;
+    width: 100%;
   }
 }
 section .cta-layout .app-store-links {
@@ -633,7 +644,7 @@ section .cta-layout .app-store-links .app-store-block img {
   padding-left: 0px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
