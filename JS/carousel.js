@@ -28,18 +28,16 @@ const count = array => {
 
 class Reviews {
   constructor(props) {
-    this.element = props;
-    this.reviews = Array.from(document.querySelectorAll(".review"));
-    this.tab = Array.from(document.querySelectorAll(".tab"));
+    this.tabs = Array.from(document.querySelectorAll(".tab"));
     this.setInterval();
   }
 
   setInterval() {
-    setInterval(count, 5000, this.tab);
+    setInterval(count, 5000, this.tabs);
   }
 }
 
-document.querySelectorAll(".tab").forEach(element => new Tab(element));
+const tabs = Array.from(document.querySelectorAll(".tab")).map(element => new Tab(element));
 
 let reviews = document.querySelector(".reviews");
 reviews = new Reviews(reviews);
