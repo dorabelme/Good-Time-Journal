@@ -23,8 +23,14 @@ addEventToElement(mainheading, "mouseout", "1");
 const querySelectorAll1 = [
   ".app-store-block img",
   ".card-content h3",
+  ".card-content h5",
   ".title-label",
-  "section h2"
+  "section h2",
+  ".card-icon img",
+  ".technology-img",
+  ".technology-list-item h3",
+  ".review h4",
+  ".review p"
 ];
 
 querySelectorAll1.forEach(selector => {

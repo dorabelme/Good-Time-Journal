@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
   color: @nav-color;
@@ -79,6 +79,9 @@ h3 {
   color: #0f7ec1;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+  @media @mobile {
+    margin-top: 2rem;
+  }
 }
 
 h4 {

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en" class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+</style><style type="text/css">.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* //####################################################### */
+/* DORA LOGIN CSS */
+
+.loginbox {
+  width: 30rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
+  padding: 3rem 2rem;
+  min-height: 16.5rem;
+  text-align: center;
+}
+
+
+.loginHeader {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  letter-spacing: -0.15rem;
+}
+
+.loginbox p {
+  margin-bottom: 6rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form input {
+  margin-bottom: 2rem;
+  height: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.button {
+  border: 0.5px transparent solid;
+  background-color: #a3e4d7;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  width: 40%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #1e314e;
+  text-transform: none;
+  cursor: pointer;  
+  font-weight: 600;
+}
+
+.loginbox {
+  width: 30rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
+  padding: 3rem 2rem;
+  min-height: 16.5rem;
+  text-align: center;
+}
+
+
+.loginHeader {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #1e314e;
+  line-height: 1.2em;
+  margin: 0;
+  letter-spacing: -0.15rem;
+}
+
+.loginbox p {
+  margin-bottom: 6rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin-bottom: 2rem;
+  height: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+}
+
+.button {
+  border: 0.5px transparent solid;
+  background-color: #a3e4d7;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  width: 40%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #1e314e;
+  text-transform: none;
+  cursor: pointer;  
+  font-weight: 600;
+}
+
+.upperButton {
+  margin-bottom: 2rem;
+}
+
+.button:hover {
+  background: white;
+  color: #1e314e;
+  border: 0.1rem solid #a3e4d7;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px){
+  .loginbox{
+    width: 80%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .loginbox p {
+    margin-bottom: 3rem;
+  }
+  .loginHeader {
+    font-size: 2rem;
+  }
+  .form input {
+    height: 2rem;
+  }
+  .button {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+
+/* DORA NAVBAR AND ACTIVITYFORM CSS */
+
+.nav {
+  max-width: 60rem;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1vw 0 1vw;
+}
+
+.nav .loginHeader {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.navigation-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-bar button {
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #a3e4d7;
+}
+
+.navigation-bar button:hover {
+  background: white;
+  color: #1e314e;
+  border: 0.1rem solid #a3e4d7;
+}
+
+.inputContainer {
+  max-width: 60rem;
+  border-radius: 0.5rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  background: white;
+  box-shadow: 1rem 1rem 5rem rgba(30, 49, 78, 0.14);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.activityLogForm {
+  max-width: 60rem;
+  margin: 2rem auto;
+}
+
+/* .buttonPost {
+  display: flex;
+  justify-content: center; 
+  margin-top: 3rem;
+  padding: 1rem 0.5rem;
+} */
+
+.buttonPost:hover {
+  background: white;
+  color: #1e314e;
+  border: 0.1rem solid #a3e4d7;
+}
+
+.form2 input {
+  height: 6rem;
+}
+
+@media (max-width: 500px){
+  .nav{
+    width: 80%;
+    margin: 3rem auto;
+  }
+  .inputContainer {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  .button {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+.post {
+  margin: 3rem auto;
+}
+
+.buttonDiv {
+  max-width: 60rem;
+  /* text-align: center; */
+  margin: 0 auto;
+}</style><script charset="utf-8" src="./React App_files/main.b0cbb73a1d8b0be15907.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.71a090a6f6b41c36ee7d.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.a433bdec7337aa81af9e.hot-update.js"></script><script charset="utf-8" src="./React App_files/main.99d024eadfa6660443fe.hot-update.js"></script></head>
+  <body data-gr-c-s-loaded="true">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><div><div class="nav"><h2 class="loginHeader">Good Time Journal</h2><div class="navigation-bar"><button class="button">Main Page</button><button class="button">Activity Log</button><button class="button">Reflection Log</button></div></div><div class="ActivityLog"><div><div class="activityLogForm"><div class="inputContainer"><div class="form"><input type="text" placeholder="Title" name="postTitle" value=""><input type="number" placeholder="Engagement Score" name="engagementScore" value=""><input type="number" placeholder="Energy Score" name="energyScore" value=""></div><div class="form form2"><input type="text" placeholder="Post" name="postBody" value=""></div></div><div class="ButtonDiv"><button class="button">POST!</button></div></div></div><div><h1> user_id: </h1><div class="posts"><div><div class="post"><div><div class="inputContainer"><h1 class="loginHeader">POST</h1><h4>POST TITLE: a</h4><h5>ENGAGEMENT: 1</h5><h5>ENERGY: 1</h5><h5>USER_ID: 1</h5><h5>ID: 5</h5><h5>TIMESTAMP: 06/27/2019</h5></div><div><div>a</div></div></div><div class="buttonDiv"><button class="button">DELETE</button></div><div class="inputContainer"><div class="form"><input type="text" placeholder="Title" name="postTitle" value=""><input type="number" placeholder="Engagement Score" name="engagementScore" value=""><input type="number" placeholder="Energy Score" name="energyScore" value=""></div><div class="form"><input type="text" placeholder="Post" name="postBody" value=""></div></div><div class="buttonDiv"><button class="button">UPDATE!</button></div></div></div></div></div><div class="posts"></div></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js"></script><script src="./React App_files/0.chunk.js"></script><script src="./React App_files/main.chunk.js"></script><script src="./React App_files/main.ba1cf59f7f247257adaa.hot-update.js"></script>
+
+<script type="text/javascript" async="" src="./React App_files/1e6ab715a3a95d4603.js"></script></body></html>
