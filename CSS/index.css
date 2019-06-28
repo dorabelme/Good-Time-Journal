@@ -175,7 +175,7 @@ body {
   }
 }
 a {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   text-decoration: none;
   color: #1e314e;
@@ -237,6 +237,11 @@ h3 {
   color: #0f7ec1;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    margin-top: 2rem;
+  }
 }
 h4 {
   font-size: 1.7rem;
@@ -768,8 +773,8 @@ section .cta-layout .app-store-links .app-store-block img {
   width: 1.2rem;
 }
 .review .reviews .review-controls .tab-active {
-  background-color: white;
-  border: 2px solid #23d3d3;
+  background-color: #FFFFFF;
+  border: 2px solid #00a4e5;
 }
 .review .reviews:after {
   background-image: linear-gradient(to bottom, #F1F2F6, #FFFFFF);
