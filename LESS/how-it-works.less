@@ -1,0 +1,80 @@
+.how-it-works-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .column1 {
+        width: 50%;
+        @media @tablet {
+            width: 100%;
+            text-align: center;
+        }
+
+        .intro-wrapper {
+            @media @tablet {
+                .flex(column, center, center);
+            }
+            h2 {
+                max-width: 48rem;
+                font-size: 4.2rem;
+                @media @mobile {
+                    font-size: 3rem;
+                }
+            }
+            p {
+                max-width: 51.2rem;
+            }
+        }
+
+        .how-it-works-list {
+            .how-it-works-list-item {
+                background: @white;
+                box-shadow: 1rem 1rem 5rem @box-shadow;
+                .flex(row, flex-start);
+                margin: 3rem 0;
+                padding: 3rem 2rem;
+                min-height: 16.5rem;
+                @media @tablet {
+                    .flex(column, center, center);
+                }
+
+                .card-icon {
+                    width: 7.2rem;
+                    flex-shrink: 0;
+                    img {
+                        .width-100();                
+                    }
+                }
+
+                .card-content {
+                    margin-left: 2.5rem;
+                    color: @body-color;
+                    p {
+                        margin: 0;
+                        display: block;
+                        margin-block-start: 1em;
+                        margin-block-end: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .how-it-works-images {
+        width: 44%;
+        .flex(column, none, flex-start, wrap);
+        @media @tablet {
+            width: 100%;
+            .flex(row, center, center);
+        }
+
+        .how-it-works-image-wrapper {
+            max-width: 40rem;
+            img {
+                .width-100();
+                margin: 2rem 0;
+            }
+        }
+    }
+}

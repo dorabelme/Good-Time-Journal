@@ -1,0 +1,116 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  // min-width: 45rem; 
+  max-width: 140rem;
+  margin: 0 auto;
+  background-color: @main-bg;
+  font-family: "Hind", sans-serif;
+  color: @grey;
+  font-size: 1.5rem;
+  line-height: 1.8em;
+  font-weight: 300;
+  @media @mobile {
+    margin: 1rem;
+  }
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: @nav-color;
+  text-transform: none;
+  cursor: pointer;    
+}
+
+section {
+  display: block;
+  position: relative;
+  max-width: 160rem;
+  margin: 0 auto;
+  padding: 5rem 15rem;
+  box-sizing: content-box;
+}
+
+.title-label {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: @lightblue;
+  text-transform: uppercase;
+  @media @mobile {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  color: @nav-color;
+  line-height: 1.2em;
+  margin: 0;
+  letter-spacing: -0.15rem;
+  margin-bottom: 2rem;
+  @media @tablet {
+    font-size: 3.5rem;
+  }
+  @media @mobile {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: #0f7ec1;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  @media @mobile {
+    margin-top: 2rem;
+  }
+}
+
+h4 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: @darkblue;
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+ h5 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.05rem;
+    color: #1e314e;
+    line-height: 1.2em;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.8em;
+  margin-bottom: 2rem;
+}
+
+
+

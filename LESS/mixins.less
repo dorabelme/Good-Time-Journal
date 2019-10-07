@@ -1,0 +1,23 @@
+.width-100 {
+  width: 100%;
+}
+
+.flex(@direction, @justify, @align: center, @flex-wrap: nowrap) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+    flex-wrap: @flex-wrap;
+}
+
+.button-style() {
+  border: 0.5px transparent solid;
+  background-color: @main-color;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  &:hover {
+    background: @main-bg;
+    color: @nav-color;
+    border: 0.1rem solid @main-color;
+  }
+}
