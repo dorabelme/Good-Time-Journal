@@ -4,7 +4,7 @@
 
 This is the source code for Good Time Journal. It's built with vanilla JavaScript, CSS, HTML, and TweenMax animation library.
 
-![goodtimejournal](images/good-time-journal.png)
+![goodtimejournal](./good-time-journal.png)
 
 ## Installation
 
